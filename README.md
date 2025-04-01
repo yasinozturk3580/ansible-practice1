@@ -4,7 +4,7 @@ yum install epel-release -y
 yum install ansible -y
 
 #  set up inventory file connect vm1 to ansible machine
-vi  /etc/ansible/hosts : save vm1 ip  address in ansible machine (vm1     ansible_host=vm1 ip address )
+vi  /etc/ansible/hosts : save vm1 ip  address in ansible machine     (vm1     ansible_host=vm1 ip address )
 cat  /etc/ansible/hosts
 ansible  -m ping all : check it if it connected
 
