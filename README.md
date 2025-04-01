@@ -12,8 +12,6 @@ ansible  -m ping all : check it if it connected
 touch  yum.yml
 # run this commands for playbook 
 ansible-playbook  yum.yml
-ansible-playbook variables.yml
-ansible-playbook  debug.yml
 # systemctl status httpd  
 run this command check the task in vm1 .if it works
 
