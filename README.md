@@ -10,7 +10,7 @@ ansible  -m ping all : check it if it connected
 
 # create files in class1
 touch  yum.yml
-# run this commands for playbook 
+# run this command for playbook 
 ansible-playbook  yum.yml
 # systemctl status httpd  
 run this command check the task in vm1 .if it works
