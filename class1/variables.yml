@@ -1,0 +1,7 @@
+- hosts: web
+  vars:
+    package_name: "httpd"
+  tasks:
+  - yum:
+      name: "{{ package_name }}"
+      state: latest
