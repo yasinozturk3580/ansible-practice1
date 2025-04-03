@@ -1,3 +1,7 @@
+#install Git in ansible vm machine = git is a version control tool,SCM source code management.
+1-yum install git  -y 
+2-git version : check if it installed
+
 # install ansible 
  1-yum install epel-release -y
  2-yum install ansible -y
