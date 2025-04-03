@@ -12,9 +12,15 @@
   3-ansible  -m ping all : check it if it connected
 
 #  create files in class1
- touch  yum.yml
+ 1.touch  yum.yml
+ 2.touch variables.yml
+ 3.touch debug.yml
+
 #  run this command for playbook 
- ansible-playbook  yum.yml
+ 1.ansible-playbook  yum.yml
+ 2.ansible-playbook  variables.yml
+ 3.ansible-playbook  debug.yml
+
 #  systemctl status httpd  
  run this command check the task in vm1 .if it works
 
