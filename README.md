@@ -1,2 +1,2 @@
 # Instructions
-# Each folder has a README.md file
+1. Each folder has a README.md file
