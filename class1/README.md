@@ -35,11 +35,11 @@
          name: "{{ package_name }}"
          state: latest
 
-    example (insatall apache)
-      ansible-playbook variables.yml
+    example (install apache)
+       ansible-playbook variables.yml
 
     example (install git)
-      ansible-playbook -e "package_name=git"  variables.yml
+       ansible-playbook -e "package_name=git"  variables.yml
  
 
 
