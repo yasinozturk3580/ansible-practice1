@@ -24,6 +24,24 @@
 #  systemctl status httpd  
  run this command check the task in vm1 .if it works
 
+ #  ansible variables :variables are used to make you playbooks reusable
+ #  variable.yml
+ 
+   - hosts: web
+     vars:
+       package_name: "httpd"
+     tasks:
+     - yum:
+         name: "{{ package_name }}"
+         state: latest
+
+    example (insatall apache)
+      ansible-playbook variables.yml
+
+    example (install git)
+      ansible-playbook -e "package_name=git"  variables.yml
+ 
+
 
 
 
