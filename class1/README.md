@@ -40,6 +40,9 @@
 
     example (install git)
        ansible-playbook -e "package_name=git"  variables.yml
+
+
+   # debug : it used for troubleshooting
  
 
 
