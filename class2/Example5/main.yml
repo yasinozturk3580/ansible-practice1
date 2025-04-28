@@ -1,0 +1,18 @@
+- hosts: all
+  tasks:
+  - debug: 
+      msg: "Variable is {{ ansible_os_family }}"
+
+  - name: Install Apache on CentOS
+    yum:
+      name: httpd
+      state: latest
+    when: ansible_os_family == "RedHat"
+
+  - name: Install Apache on httpd (state=present is optional)
+    apt:
+      name: apache2
+      state: present
+    when: ansible_os_family == "Debian"
+
+    
