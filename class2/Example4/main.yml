@@ -1,5 +1,9 @@
-- hosts: centos
+- hosts: all
   tasks:
-  - yum: 
-       name: httpd 
-       state: latest
+  - debug: 
+      msg: "Variable is {{ ansible_os_family }}"
+
+  - name: Include a  play after another play
+    include: "{{ ansible_os_family }}.yml"
+
+    
