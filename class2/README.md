@@ -11,3 +11,5 @@
 
 # 1-git pull
   2-git push -f origin master = (force push)
+
+# cat hosts = it shows custom inventory file.
