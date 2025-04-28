@@ -13,3 +13,4 @@
   2-git push -f origin master = (force push)
 
 # cat hosts = it shows custom inventory file.
+# cp -r  Example4/*  Example5/ = it copies everything from Example4 to Example5
