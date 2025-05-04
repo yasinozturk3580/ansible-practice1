@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+  - yum: 
+      name: httprt
+      state: latest
+    register: yum_status 
+    ignore_errors: true 
+
+  - systemd:
+      state: started
+      enabled: yes
+      name: httpd
+    when: yum_status.failed == false

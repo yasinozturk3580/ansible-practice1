@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - shell: "uname -r"
+    register: uname_output
+
+  - debug:
+      msg: "Kernel version  is {{ uname_output.stdout }}"
