@@ -13,3 +13,5 @@
 -p	       Processor type                           	x86_64 or unknown
 -i	       Hardware platform	                        x86_64 or unknown
 -o	       Operating system	                          GNU/Linux
+
+# each examples have a .gitignore files create .gitignore file and write it inside hosts before you push the folder to github repository
