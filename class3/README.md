@@ -31,6 +31,17 @@
  4- grep  ServerName      /etc/httpd/conf/httpd.conf
  5- egrep "^#ServerName"  /etc/httpd/conf/httpd.conf
 
+ # Example9 (use NTP(network time protocol) servers 
+  - ntpd ( not installed )
+  - chronyd ( installed )
+  
+ 
+ 1-systemctl status chronyd
+ 2-cat  /etc/chrony.conf
+ 3-cat /var/log/secure
+ 4- head /etc/chrony.conf
+
+
 
 # ansible  -i hosts  all  -m ping = check the all VM's connect.
 
