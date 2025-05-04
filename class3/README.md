@@ -9,18 +9,22 @@
 
      [ubuntu]
       ubuntu1   ansible_host=
+
 # create 1 vm for example7 folder
+# Registering Variables = updating variables while running playbook.
+
 # Example7 folder has a hosts file.(use register variables) 
  # hosts 
    [centos]
    vm1  ansible_host=
 
 # Example8 folder has a hosts file. (use handlers)
+# Handlers = Handlers are tasks which can be executed multiple times.
  # hosts 
    [centos]
    vm1  ansible_host=
 
- # use these commands for example8 folder 
+ # use these commands for example8 folder on vm1 
  1- ls   /etc/httpd/conf.d/
  2- ls   /etc/httpd/conf/httpd.conf
  3- vi  /etc/httpd/conf/httpd.conf
@@ -45,4 +49,4 @@
 
 # each example folder has a .gitignore files 1-create .gitignore file and write it inside hosts before you push the folder to github repository
 
-# handlers = Handlers are tasks which can be executed multiple times.
+
