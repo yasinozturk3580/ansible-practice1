@@ -1,6 +1,28 @@
 # ansible-playbook  -i hosts main.yml
 
+# create 2 vms for example6 folder 1 is centos 1 is ubuntu 
+
+# Example6 folder has a hosts file.
+ # hosts
+     [centos]
+      centos1   ansible_host=
+
+     [ubuntu]
+      ubuntu1   ansible_host=
+# create 1 vm for example7 folder
+# Example7 folder has a hosts file. 
+ # hosts 
+   [centos]
+   vm1  ansible_host=
+
+# Example8 folder has a hosts file. 
+ # hosts 
+   [centos]
+   vm1  ansible_host=
+
+
 # ansible  -i hosts  all  -m ping = check the all VM's connect.
+
 # uname  -r = it shows you the version of the Linux kernel currently running on your system.
 
 # list of common and useful uname options, each showing a different piece of system information:
@@ -15,3 +37,5 @@
 -o	       Operating system	                          GNU/Linux
 
 # each example folder has a .gitignore files 1-create .gitignore file and write it inside hosts before you push the folder to github repository
+
+# handlers = Handlers are tasks which can be executed multiple times.
