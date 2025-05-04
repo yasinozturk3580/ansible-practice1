@@ -10,21 +10,22 @@
      [ubuntu]
       ubuntu1   ansible_host=
 # create 1 vm for example7 folder
-# Example7 folder has a hosts file. 
+# Example7 folder has a hosts file.(use register variables) 
  # hosts 
    [centos]
    vm1  ansible_host=
 
-# Example8 folder has a hosts file. 
+# Example8 folder has a hosts file. (use handlers)
  # hosts 
    [centos]
    vm1  ansible_host=
 
  # use these commands for example8 folder 
- 1-ls   /etc/httpd/conf.d/
- 2-ls   /etc/httpd/conf/httpd.conf
+ 1- ls   /etc/httpd/conf.d/
+ 2- ls   /etc/httpd/conf/httpd.conf
  3- vi  /etc/httpd/conf/httpd.conf
- 4-grep  ServerName   /etc/httpd/conf/httpd.conf
+ 4- grep  ServerName      /etc/httpd/conf/httpd.conf
+ 5- egrep "^#ServerName"  /etc/httpd/conf/httpd.conf
 
 
 # ansible  -i hosts  all  -m ping = check the all VM's connect.
