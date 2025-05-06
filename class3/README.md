@@ -73,6 +73,6 @@
  3- git push
 
 # 1-git pull
-  2-git push -f origin master = (force push
+  2-git push -f origin master = ( force push )
 
 
