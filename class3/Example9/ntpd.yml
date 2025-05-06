@@ -1,0 +1,19 @@
+- hosts: all
+  tasks:
+  - name: update chronyd.conf
+    lineinfile:
+      path: /etc/chrony.conf
+      regexp: '^server'
+      line: "server pool.companny.com  iburst"
+
+  - name: Remove unnecessary lines from chrony conf
+    lineinfile:
+      path: /etc/chrony.conf 
+      regexp: '^server [0-3]'
+      state: absent
+   
+  
+
+
+
+
