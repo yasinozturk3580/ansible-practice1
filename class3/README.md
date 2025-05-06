@@ -32,15 +32,17 @@
  5- egrep "^#ServerName"  /etc/httpd/conf/httpd.conf
 
  # Example9 (use NTP(network time protocol) servers 
+ # ansible-playbook  -i hosts ntpd.yml
   - ntpd ( not installed )
   - chronyd ( installed )
   
- 
+ # run this commands on vm1
  1-systemctl status chronyd
  2-cat  /etc/chrony.conf
  3-cat /var/log/secure
  4- head /etc/chrony.conf
-
+ 5- egrep "^server"  /etc/chrony.conf
+ 6-egrep "^server [0-3]"  /etc/chrony.conf
 
 
 # ansible  -i hosts  all  -m ping = check the all VM's connect.
