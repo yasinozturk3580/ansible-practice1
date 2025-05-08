@@ -1,3 +1,4 @@
+# create new vm for class4
 # Roles 
   - Roles are packaged playbooks
   - Roles are shareable and reusable
@@ -37,3 +38,4 @@
   2-git push -f origin master = ( force push )
 
 # rm -rf ( file or folder name ) : delete it
+#  ansible  -i hosts  all  -m ping = check the all VM's connect.
