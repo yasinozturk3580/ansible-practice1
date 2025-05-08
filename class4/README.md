@@ -1,4 +1,6 @@
 # create new vm for class4
+# run this command for verify on class4 folder after you done with playbook.
+ - ansible-playbook  -i hosts installapache.yml
 # Roles 
   - Roles are packaged playbooks
   - Roles are shareable and reusable
@@ -38,4 +40,4 @@
   2-git push -f origin master = ( force push )
 
 # rm -rf ( file or folder name ) : delete it
-#  ansible  -i hosts  all  -m ping = check the all VM's connect.
+# ansible  -i hosts  all  -m ping = check the all VM's connect.
