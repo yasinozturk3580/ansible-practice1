@@ -5,9 +5,11 @@
   - Roles are packaged playbooks
   - Roles are shareable and reusable
 # run this command on class4 vsc
+
 # create an ansible role
- - ansible-galaxy  init apache-role
-# keep those folder 
+ - install rolls on vm1 with this command : ansible-galaxy  init apache-role
+
+# keep those folders 
  - ansible role directory structure
     - meta/         general info about your role
     - defaults/     for default variables values
