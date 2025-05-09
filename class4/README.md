@@ -15,6 +15,7 @@
     - defaults/     for default variables values
     - handlers/     for handlers
     - tasks/        for playbooks
+    - files/        for files to be copied to be remote machine
     - templates/    for templates.
 
 
