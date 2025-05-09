@@ -18,9 +18,11 @@
     - files/        for files to be copied to be remote machine
     - templates/    for templates.
 
-# create files folder under apache-role folder and then install template in files folder.
+# create ( files folder ) under apache-role folder and then install template in files folder.
 - yum install wget -y
 - wget   https://www.free-css.com/assets/files/free-css-templates/download/page292/grandcoffee.zip
+
+# create ( httpd.conf.j2 ) file under template folder. 
 
 
 
