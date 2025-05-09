@@ -8,3 +8,8 @@
     name: "{{ package_name }}"
     state: latest
   notify: Restart httpd
+
+- name: copy Template
+  copy:
+    src: grandcoffee.zip
+    dest: /tmp/
