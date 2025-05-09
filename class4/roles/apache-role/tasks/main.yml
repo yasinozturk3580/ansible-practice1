@@ -1,0 +1,10 @@
+- name: Disable SELinux
+  selinux:
+    state: disabled
+  when: ansible_os_family == 'Redhat'
+
+- name: Install Apache
+  package:
+    name: "{{ package_name }}"
+    state: latest
+  notify: Restart httpd

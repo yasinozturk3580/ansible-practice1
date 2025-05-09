@@ -1,0 +1,11 @@
+galaxy_info:
+  author: yasin ozturk
+  description: your role description
+  company: your company (optional)
+  license: MIT
+  min_ansible_version: 2.9
+  galaxy_tags: 
+  - apache
+  - httpd
+  dependencies: []
+ 
