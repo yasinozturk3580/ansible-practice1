@@ -1,2 +1,4 @@
 ---
 package_name: "httpd"
+admin_email: "admin@example.com"
+domain_name: "yourcompany.com"

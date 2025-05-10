@@ -13,3 +13,9 @@
   copy:
     src: grandcoffee.zip
     dest: /tmp/
+
+- name: Copy Apache config
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf
+  

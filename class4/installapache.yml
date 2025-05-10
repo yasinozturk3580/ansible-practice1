@@ -1,4 +1,6 @@
 - hosts: all
+  vars:
+    domain_name: yasin.com 
   tasks:
   - name: Install Apache
     import_role:

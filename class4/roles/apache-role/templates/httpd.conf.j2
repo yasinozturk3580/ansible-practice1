@@ -1,0 +1,36 @@
+
+ServerRoot "/etc/httpd"
+Listen 80
+
+Include conf.modules.d/*.conf
+
+User apache
+Group apache
+
+ServerAdmin {{ admin_email }}
+ServerName {{ domain_name }}:80
+
+DocumentRoot "/var/www/html"
+
+<Directory />
+    AllowOverride none
+    Require all denied
+</Directory>
+
+<Directory "/var/www/html">
+    AllowOverride None
+    Require all granted
+</Directory>
+
+ErrorLog "logs/error_log"
+LogLevel warn
+
+IncludeOptional conf.d/*.conf
+
+LogFormat "%h %l %u %t \"%r\" %>s %b" combined
+CustomLog "logs/access_log" combined
+
+<IfModule php_module>
+    AddType application/x-httpd-php .php
+    DirectoryIndex index.php
+</IfModule>
