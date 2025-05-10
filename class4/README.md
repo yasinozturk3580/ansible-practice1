@@ -22,7 +22,9 @@
 - yum install wget -y
 - wget   https://www.free-css.com/assets/files/free-css-templates/download/page292/grandcoffee.zip
 
-# create ( httpd.conf.j2 ) file under template folder. 
+# create ( httpd.conf.j2 ) file under template folder.
+ - run this command on vm1  =  grep -v  "^#" /etc/httpd/conf/httpd.conf
+ - copy, paste it in httpd.conf.j2 file.
 
 
 
