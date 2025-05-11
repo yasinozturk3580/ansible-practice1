@@ -32,6 +32,7 @@
  - systemctl status  apache2
  - ls  /etc/apache2/
  - cat /etc/apache2/apache2.conf
+ - grep  -v  "^#" /etc/apache2/apache2.conf
    
 
 
