@@ -26,6 +26,14 @@
  - run this command on vm1  =  grep -v  "^#" /etc/httpd/conf/httpd.conf
  - copy, paste it in httpd.conf.j2 file.
 
+# create setup_debian file and setup_redhat file under tasks folder.
+ - install apache2 for ubuntu vm machine
+ - apt install apache2 = it installs apache2 for ubuntu vm
+ - systemctl status  apache2
+ - ls  /etc/apache2/
+ - cat /etc/apache2/apache2.conf
+   
+
 
 
 
