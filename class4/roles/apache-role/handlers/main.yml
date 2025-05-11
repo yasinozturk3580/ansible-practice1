@@ -4,3 +4,10 @@
     state: restarted
     enabled: yes
     name: httpd
+
+
+- name: Restart apache2
+  systemd:
+    state: restarted
+    enabled: yes
+    name: apache2

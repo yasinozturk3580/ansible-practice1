@@ -1,0 +1,20 @@
+- name: Disable SELinux
+  selinux:
+    state: disabled
+
+- name: Install Apache
+  package:
+    name: httpd
+    state: latest
+  notify: Restart httpd
+
+- name: copy Template
+  copy:
+    src: grandcoffee.zip
+    dest: /tmp/
+
+- name: Copy Apache config
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf
+  notify: Restart httpd

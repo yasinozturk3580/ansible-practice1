@@ -1,21 +1,2 @@
-- name: Disable SELinux
-  selinux:
-    state: disabled
-  when: ansible_os_family == 'Redhat'
-
-- name: Install Apache
-  package:
-    name: "{{ package_name }}"
-    state: latest
-  notify: Restart httpd
-
-- name: copy Template
-  copy:
-    src: grandcoffee.zip
-    dest: /tmp/
-
-- name: Copy Apache config
-  template:
-    src: httpd.conf.j2
-    dest: /etc/httpd/conf/httpd.conf
-  notify: Restart httpd
+- name: Include tasks
+  include: "setup_{{ ansible_os_family }}.yml"
