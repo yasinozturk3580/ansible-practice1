@@ -33,6 +33,13 @@
  - ls  /etc/apache2/
  - cat /etc/apache2/apache2.conf
  - grep  -v  "^#" /etc/apache2/apache2.conf
+
+
+ # under example11 folder 
+ -create aws_ec2.yml file
+ - install these under under example11 folder  = 1- curl  https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
+    2-pip install boto3
+    3-pip install botocore
    
 
 
