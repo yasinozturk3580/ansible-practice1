@@ -41,9 +41,10 @@
    1- curl  https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
    2- pip install boto3
    3- pip install botocore
-   1 - ansible  -i  aws_ec2.yml  all -m  ping
-   2 - pip install awscli
-   3 - aws configure
+   4- pip install awscli
+   1- ansible  -i  aws_ec2.yml  all -m  ping
+   2- aws configure
+   3- aws ec2 list
    
 
 
