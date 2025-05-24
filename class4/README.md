@@ -42,10 +42,16 @@
    2- pip install boto3
    3- pip install botocore
    4- pip install awscli
-   1- ansible  -i  aws_ec2.yml  all -m  ping
+   1- ansible  -i  aws_ec2.yml  all -m  ping ( ansible  -i aws_ec2.yml  all  -m  ping  -u  ec2-user ) = it shows you if the all ec2 connect to ansible vm
+   1.1 - export ANSIBLE_HOST_KE_CHECKING=False =(this command will disable hosts keys verification ) it skips yes, no questions.
+   1.2 - and than run ping command >> ansible  -i aws_ec2.yml  all  -m  ping  -u  ec2-user 
    2- aws configure
    3- aws ec2 list
    4- aws ec2 describe-instances = its a test to have permission
+   5- Make sure ec2 instances have ansible ssh key installed
+   - go to ansible vm get ssh public key >>>  cat ~/.ssh/id_rsa.pub
+   - go to each instance connect ec2 console run this >>> vi  ~/.ssh/id_rsa.pub copy paste ansible ssh public key
+   - go to vsc and run this commands up there 1.1 and 1.2 it will be connect to all instances..
    
 
 
@@ -57,8 +63,9 @@
 
 
 
-
-
+# cat ~/.ssh/id_rsa.pub
+# cat ~/.ssh/authorized_keys
+# vi  ~/.ssh/id_rsa.pub 
 
 # To manually push your code from Visual Studio Code (VS Code) to a GitHub repository, In the VS Code terminal follow these steps:
  1- git add .
