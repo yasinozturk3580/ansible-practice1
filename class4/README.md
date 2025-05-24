@@ -45,6 +45,7 @@
    1- ansible  -i  aws_ec2.yml  all -m  ping
    2- aws configure
    3- aws ec2 list
+   4- aws ec2 describe-instances = its a test to have permission
    
 
 
