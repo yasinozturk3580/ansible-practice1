@@ -52,6 +52,12 @@
    - go to ansible vm get ssh public key >>>  cat ~/.ssh/id_rsa.pub
    - go to each instance connect ec2 console run this >>> vi  ~/.ssh/id_rsa.pub copy paste ansible ssh public key
    - go to vsc and run this commands up there 1.1 and 1.2 it will be connect to all instances..
+
+   # create yum.yml file
+     # testing commands for aws_ec2.yml and yum.yml files.
+   ansible  -i aws_ec2.yml  localhost  -m debug  -a 'var=groups'
+   ansible-playbook  -i aws_ec2.yml  yum.yml  -u ec2-user
+   ansible-playbook  -i aws_ec2.yml  yum.yml  -u ec2-user -b
    
 
 
