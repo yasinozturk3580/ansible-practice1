@@ -36,11 +36,13 @@
 
 
  # under example11 folder 
-  ansible  -i  aws_ec2.yml  all -m  ping
- - create aws_ec2.yml file
- - install these under under example11 folder  = 1- curl  https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
-   2-pip install boto3
-   3-pip install botocore
+  - create aws_ec2.yml file
+  - install and run these under example11 folder  = 1- curl  https://bootstrap.pypa.io/pip/2.7/get-pip.py | python
+   2- pip install boto3
+   3- pip install botocore
+   4- ansible  -i  aws_ec2.yml  all -m  ping
+   4- pip install awscli
+   5- aws configure
    
 
 
