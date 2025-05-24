@@ -43,7 +43,7 @@
    3- pip install botocore
    4- pip install awscli
    1- ansible  -i  aws_ec2.yml  all -m  ping ( ansible  -i aws_ec2.yml  all  -m  ping  -u  ec2-user ) = it shows you if the all ec2 connect to ansible vm
-   1.1 - export ANSIBLE_HOST_KE_CHECKING=False =(this command will disable hosts keys verification ) it skips yes, no questions.
+   1.1 - export ANSIBLE_HOST_KE_CHECKING=False or false =(this command will disable hosts keys verification ) it skips yes, no questions.
    1.2 - and than run ping command >> ansible  -i aws_ec2.yml  all  -m  ping  -u  ec2-user 
    2- aws configure
    3- aws ec2 list
