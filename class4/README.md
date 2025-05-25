@@ -65,7 +65,9 @@
 
 
 
-
+# delete all ec2 instances wherever location you created it
+  1- delete key pair
+  2- delete security group
 
 
 
