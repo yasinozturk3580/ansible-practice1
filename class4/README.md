@@ -73,6 +73,8 @@
 
 
 # cat ~/.ssh/id_rsa.pub
+# vi  ~/.ssh/authorized_keys
+# ssh ec2-user@(ec2 public ip address): it shows if it connected to ec2
 # cat ~/.ssh/authorized_keys
 # vi  ~/.ssh/id_rsa.pub 
 
